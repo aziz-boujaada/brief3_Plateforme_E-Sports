@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.hero-section {
+    text-align: center;
+     
+    background: url(../images/banner_bg.jpg) center/cover no-repeat;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero-section h1 {
+    font-family: "Bruno Ace", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    font-size: 4rem;
+}
+
+.hero-section p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+}
+
+/* .buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-primary {
+    margin-right: 10px;
+    border: 1px solid #45F882;
+}
+
+.btn-secondary {
+    margin-left: 10px;
+} */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px 28px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn.primary {
+    background: #45F882;
+    color: #000;
+}
+
+.btn.primary:hover {
+    background: #45F882;
+    transform: scale(1.1);
+}
+
+.btn.secondary {
+    border: 1px solid #45F882;
+    color: #45F882;
+}
+
+.btn.secondary:hover {
+    color: #45F882;
+    transform: scale(1.1);
+}

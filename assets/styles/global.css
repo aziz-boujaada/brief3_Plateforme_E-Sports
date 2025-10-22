@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+:root {
+    --primary-color: #45f882;
+    --bg-color: #0B1016;
+    --cards-bg: #090034;
+    --white-color: #ffff;
+    --black-color: black;
+    --gray-color: #7A7979;
+    --primary-hover: #95ffb9;
+    --icons-bg: rgba(161, 255, 221, 0.8);
+    --main-font: "Bruno Ace SC", sans-serif;
+    --big-raduis: 24px;
+    --small-raduis: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--bg-color);
+    margin: 0 6rem;
+}
+
+li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--white-color);
+    font-family: var(--main-font);
+    transition: all 0.5s;
+}
+
+
+a:hover {
+    color: var(--primary-color);
+}
+
+
+p{
+    font-size: 1.8rem;
+    color: var(--gray-color);
+}
+
+h1{
+    color: var(--primary-color);
+    font-family: var(--main-font);
+    font-size: 2rem;
+}
+button {
+    width: 14rem;
+    height: 4rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: var(--small-raduis);
+    color: var(--black-color);
+    font-size: 16px;
+    font-family: var(--main-font);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-color);
+    padding: 2rem;
+}
+
+.logo span {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.nav_list ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav_list ul li {
+    font-size: 1.2rem;
+}
+
+.connection_btn {
+    display: flex;
+    gap: 2rem;
+}
+
+.login_btn {
+    background-color: var(--bg-color);
+    border: 1px solid var(--primary-color);
+    color: var(--white-color);
+    transition: all 0.5s;
+}
+
+.login_btn:hover {
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+    border: 1px solid var(--white-color);
+}
+.footer_description p{
+padding-top: 2rem;
+}
+.footer_icons{
+padding-top: 2rem;
+display: flex;
+gap: 1rem;
+}
+.footer_icons i{
+
+font-size: 2rem;
+padding: 1rem;
+border: 2px solid var(--primary-color);
+border-radius: var(--small-raduis);
+}
+/*footer*/
+
+.Top_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+}
+@media (max-width: 768px){
+    body {
+        margin: 0 1rem;
+    }
+
+    #header {
+
+        padding: 1rem;
+    }
+
+    .nav_list,
+    .connection_btn {
+        display: none;
+    }
+
+    .open_mobile_menu i {
+        color: var(--white-color);
+    }
+
+}
+
+
+

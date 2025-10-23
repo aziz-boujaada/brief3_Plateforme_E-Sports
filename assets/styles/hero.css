@@ -24,17 +24,19 @@ body {
 }
 
 .hero-section h1 {
-    font-family: "Bruno Ace", sans-serif;
+    font-family: var(--main-font);
     font-weight: 400;
     font-style: normal;  
-    font-size: 4rem;
+    font-size: 6rem;
+    color: white;
 }
 
 .hero-section p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.3rem;
+  font-size: 2rem;
+  color: var(--white-color);
 }
 
 /* .buttons {
@@ -53,6 +55,7 @@ body {
 
 .buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding-top: 15px;
@@ -68,6 +71,7 @@ body {
 .btn.primary {
     background: #45F882;
     color: #000;
+    font-size: 1.2rem;
 }
 
 .btn.primary:hover {
@@ -78,9 +82,20 @@ body {
 .btn.secondary {
     border: 1px solid #45F882;
     color: #45F882;
+    font-size: 1.2rem;
 }
 
 .btn.secondary:hover {
     color: #45F882;
     transform: scale(1.1);
+}
+
+@media (max-width:768px)
+{
+   
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+    }
 }

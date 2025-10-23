@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+:root {
+    --primary-color: #45f882;
+    --bg-color: #0B1016;
+    --cards-bg: #090034;
+    --white-color: #ffff;
+    --black-color: black;
+    --gray-color: #7A7979;
+    --primary-hover: #95ffb9;
+    --icons-bg: rgba(161, 255, 221, 0.8);
+    --main-font: "Bruno Ace SC", sans-serif;
+    --big-raduis: 24px;
+    --small-raduis: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--white-color);
+}
+
+li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--white-color);
+    font-family: var(--main-font);
+    transition: all 0.5s;
+}
+
+
+a:hover {
+    color: var(--primary-color);
+}
+
+
+p{
+    font-size: 1.8rem;
+    color: var(--gray-color);
+}
+
+h1{
+    color: var(--primary-color);
+    font-family: var(--main-font);
+    font-size: 2rem;
+}
+button {
+    width: 14rem;
+    height: 4rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: var(--small-raduis);
+    color: var(--black-color);
+    font-size: 16px;
+    font-family: var(--main-font);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-color);
+    padding: 2rem;
+}
+
+.logo span {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.nav_list ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav_list ul li {
+    font-size: 1.2rem;
+}
+
+.connection_btn {
+    display: flex;
+    gap: 2rem;
+}
+
+.login_btn {
+    background-color: var(--bg-color);
+    border: 1px solid var(--primary-color);
+    color: var(--white-color);
+    transition: all 0.5s;
+}
+
+.login_btn:hover {
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+    border: 1px solid var(--white-color);
+}
+.open_mobile_menu i{
+    display: none;
+}
+/*footer*/
+
+.Top_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+}
+.footer_description p{
+    padding-top: 2rem;
+}
+.footer_icons{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+.footer_icons a{
+
+    padding: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--small-raduis);
+    text-align: center;
+}
+.footer_icons i{
+
+    font-size: 2rem;
+}
+
+@media (max-width: 768px){
+    body {
+        margin: 0 1rem;
+    }
+
+    #header {
+
+        padding: 1rem;
+    }
+
+    .nav_list,
+    .connection_btn {
+        display: none;
+    }
+
+    .open_mobile_menu i {
+        color: var(--white-color);
+        display: block;
+    }
+
+}
+
+
+
+/*Tournaments page (tournaments, live, streamers, sponsors) */
+
+.tournaments-section h2, .live-section h2, .streamers-section h2{
+    font-family: var(--main-font);
+    color: var(--primary-color);
+    font-size: 30px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.tournaments-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 3rem 30rem;
+    padding: 1rem;
+    background-color: var(--cards-bg);
+    border-radius: var(--small-raduis);
+    font-family: var(--main-font);
+    cursor: pointer;
+}
+
+.tournaments-card:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 15px var(--primary-color);
+    transition: 1.5s;
+}
+
+.tournaments-card img {
+    width: 150px;
+    height: 90px;
+    border-radius: var(--small-raduis);
+    padding: 12px;
+}
+
+.tournament-info h3, .prize h3, .time h3{
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: var(--primary-color);
+}
+
+.tournament-info h4, .prize h4, .time h4{
+    font-size: 12px;
+    
+}
+
+.tournament-info, .prize, .time {
+    border-right: 1px solid white;
+    padding-right: 20px;
+}
+
+.samred img, .samyellow img{
+    width: 90px;
+    height: 90px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+}
+
+.samred {
+    padding-left: 90px;
+}
+
+.samyellow {
+    padding-left: 50px;
+}
+
+.vs img {
+    width: 80px;
+    height: 80px;
+    
+}
+
+.live img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 130px;
+    margin-left: 40px;
+}
+
+
+.live-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 2px; */
+    /* margin: 3rem 30rem; */
+    margin: 5rem 30rem;
+    padding: 1rem;
+    background-color: var(--cards-bg);
+    border-radius: var(--small-raduis);
+    font-family: var(--main-font);
+    cursor: pointer;
+}
+
+.live-card:hover{
+    box-shadow: 10px 10px 30px red;
+    transition: 1.5s;
+    transform: scale(1.1);
+}
+
+.live-section h4 {
+    /* margin-bottom: 50px; */
+    /* padding-left: 35px; */
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+.samred h4 {
+    margin-right: 80px;
+}
+
+
+/*streamers*/
+
+.streamers-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.streamer01, .streamer02, .streamer03 {
+    cursor: pointer;
+}
+
+.streamer01:hover, .streamer02:hover, .streamer03:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.streamer01 h3, .streamer02 h3, .streamer03 h3{
+    font-family: var(--main-font);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: #45f882
+}
+
+
+
+

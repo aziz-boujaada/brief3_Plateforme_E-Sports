@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #45f882;
+    --secondry-color:#023237;
     --bg-color: #0B1016;
     --cards-bg: #090034;
     --white-color: #ffff;
@@ -12,6 +13,7 @@
     --main-font: "Bruno Ace SC", sans-serif;
     --big-raduis: 24px;
     --small-raduis: 12px;
+    
 }
 
 * {
@@ -23,6 +25,10 @@
 body {
     background-color: var(--bg-color);
     margin: 0 6rem;
+}
+section{
+    padding:0 8rem;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 li {
@@ -65,12 +71,14 @@ button {
     color: var(--black-color);
     font-size: 16px;
     font-family: var(--main-font);
-    transition: all 0.5s;
+    transition: background-color 0.5s all;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: var(--primary-hover);
+   background-color: var(--cards-bg);
+   border: 1px solid var(--primary-color);
+   color: var(--primary-color);
 }
 
 #header {
@@ -78,7 +86,11 @@ button:hover {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid var(--gray-color);
+    background-color: var(--bg-color);
     padding: 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .logo span {
@@ -113,7 +125,42 @@ button:hover {
     background-color: var(--bg-color);
     border: 1px solid var(--white-color);
 }
-
+ .open_mobile_menu i {
+       display: none;
+    }
+  .section_banner{
+    position: relative;
+  }
+    .section_banner::after{
+      content: "";
+      background-color: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .section_banner img{
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+    }
+    .section_title{
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        text-align: center;
+    }
+    .section_title h1{
+        font-size: 4rem;
+    }
+    .section_title p{
+        font-size: 2rem;
+        padding-top: 2rem;
+        font-family: var(--main-font);
+    }
 /*footer*/
 
 .Top_footer {
@@ -132,12 +179,14 @@ button:hover {
     gap: 1rem;
 }
 
-.footer_icons i {
-
+.footer_icons a {
     font-size: 2rem;
     padding: 1rem;
     border: 2px solid var(--primary-color);
     border-radius: var(--small-raduis);
+}
+.footer_icons i {
+    font-size: 2rem;
 }
 
 .footer_links h2 {
@@ -166,7 +215,7 @@ button:hover {
     align-items: center;
     gap: 1.2rem;
 }
-.info_icon i{ 
+.info_icon { 
    font-size: 2rem;
    color: var(--white-color);
    border: 1px solid var(--primary-color);
@@ -175,7 +224,11 @@ button:hover {
    transition: all 0.3s ;
    cursor: pointer;
 }
-.info_icon i:hover{ 
+.info_icon i { 
+   font-size: 2rem;
+  
+}
+.info_icon:hover{ 
   background-color: var(--primary-color);
   color: var(--white-color);;
 }
@@ -213,12 +266,30 @@ button:hover {
 }
 @media (max-width: 768px) {
     body {
-        margin: 0 1rem;
+        margin: 0 0.5rem;
+        
     }
 
-    #header {
+    section{
+    padding:0 ;
+    border-bottom: 1px solid var(--primary-color);
+}
 
-        padding: 1rem;
+ .section_title h1{
+        font-size: 2rem;
+    }
+    .section_title p{
+        font-size: 1.5rem;
+    }
+h1{
+    font-size: 2rem;
+}
+li{
+    font-size: 0.1rem;
+}
+    
+    #header {
+      width: 90%;
     }
 
     .nav_list,
@@ -228,6 +299,8 @@ button:hover {
 
     .open_mobile_menu i {
         color: var(--white-color);
+        font-size: 2rem;
+        display: block;
     }
 
 
@@ -240,20 +313,53 @@ button:hover {
 .footer_links {
    padding-top: 2rem;
 }
-.contact_info{
-    flex-direction: column;
-    align-items: start;
-    gap: 3rem;
+.footer_links li a {
+    font-size: 1rem;
 }
 
-.info_icon i{ 
-  background-color: var(--primary-color);
+
+.contact_info{
+    flex-direction: column;
+     align-items: start;
+    gap: 3rem;
+ 
+}
+
+.info_icon{ 
+  background-color: var(--primary-color); 
+}
+.info_icon { 
+   font-size: 1rem;
+   padding: 1rem;
   
 }
+.info_content h3{
+    color: var(--white-color);
+    font-size: 1.4rem;  
+}
+
+.info_content a{
+   color: var(--gray-color);
+   font-size: 1rem;
+}
+.info_content p{
+   font-size: 1rem;
+}
+
+
+.terms_part a{
+    padding-left: 2rem;
+    font-size: 1.2rem;
+}
+
+
 
 .copyright_part{
    flex-direction: column-reverse;
    gap: 3rem;
+}
+.copyright_part p{
+  font-size: 1.5rem;
 }
 
 }

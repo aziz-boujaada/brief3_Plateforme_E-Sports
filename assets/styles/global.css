@@ -27,7 +27,7 @@
 
 body {
     background-color: var(--bg-color);
-    
+    margin: 0 6rem;
 }
 section{
     padding:0 8rem;
@@ -193,8 +193,6 @@ button:hover {
     padding: 1rem;
     border: 2px solid var(--primary-color);
     border-radius: var(--small-raduis);
-.open_mobile_menu i{
-    display: none;
 }
 .footer_icons i {
     font-size: 2rem;
@@ -276,26 +274,6 @@ button:hover {
     
 }
 @media (max-width: 768px) {
-.footer_description p{
-    padding-top: 2rem;
-}
-.footer_icons{
-    margin-top: 2rem;
-    display: flex;
-    gap: 1rem;
-}
-.footer_icons a{
-
-    padding: 1rem;
-    border: 2px solid var(--primary-color);
-    border-radius: var(--small-raduis);
-    text-align: center;
-}
-.footer_icons i{
-
-    font-size: 2rem;
-}
-@media (max-width: 768px){
     body {
         margin: 0 0.5rem;
         
@@ -399,10 +377,3 @@ li{
 }
 
 }
-        display: block;
-    }
-
-}
-
-
-

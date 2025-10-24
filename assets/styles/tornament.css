@@ -324,6 +324,8 @@ button:hover {
 
 .sponsors-container {
     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     justify-content: space-evenly;
     border-radius: 20px;
     padding-top: 50px;
@@ -344,5 +346,167 @@ button:hover {
 }
 
 
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+    
+    .tournaments-section h2, .live-section h2{
+        font-size: 2rem;
+        padding: 20px 10px;
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    .tournaments-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 0 1rem;
+    }
+
+    .tournaments-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--small-raduis);
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: var(--small-raduis);
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .tournaments-card img{
+    width: 100%;
+    height: auto;
+    border-radius: var(--small-raduis);
+    }
+
+    .tournament-info, .prize, .time {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        border-right: none;
+        padding: 0;
+    }
+
+    .tournament-info h3, .prize h3, .time h3 {
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .tournament-info h4, .prize h4, .time h4 {
+        font-size: 0.9rem;
+    }
+
+    .buttons button {
+        width: 80%;
+        font-size: 1.3rem;
+    }
+
+    .buttons {
+        padding-top: 8px;
+    }
+
+    /*live section*/
+
+    .live-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+        margin: 0 1rem;
+    }
+
+    .live-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/* 
+
+    .live-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        background-color: var(--cards-bg);
+        border-radius: var(--small-raduis);
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .live-card img {
+        width: 60px;
+        height: 60px;
+    }
+
+    
+
+
+
+
+    .streamers-section h2 {
+        font-size: 2rem;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .streamers-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0 1rem 30px;
+    }
+
+    .streamer01, .streamer02, .streamer03 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 120px;
+    }
+
+    .streamer01 img, .streamer02 img, .streamer03 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .streamer01 h3, .streamer02 h3, .streamer03 h3 {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+
+    
+
+
+
+    .sponsors-section h2 {
+        font-size: 2rem;
+        padding: 40px 10px 20px;
+        text-align: center;
+    }
+
+    .sponsors-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding: 20px 0 40px;
+    }
+
+    .sponsors-container img {
+        width: 80px;
+        height: 80px;
+    }
+} */
 
 

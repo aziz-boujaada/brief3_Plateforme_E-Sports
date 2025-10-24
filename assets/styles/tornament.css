@@ -351,7 +351,7 @@ button:hover {
         font-size: 1rem;
     }
     
-    .tournaments-section h2, .live-section h2{
+    .tournaments-section h2, .live-section h2, .streamers-section h2{
         font-size: 2rem;
         padding: 20px 10px;
         text-align: center;
@@ -426,21 +426,6 @@ button:hover {
         background-color: var(--cards-bg);
         border-radius: var(--small-raduis);
         width: 50%;
-    }
-
-}
-
-/* 
-
-    .live-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        padding: 1rem;
-        background-color: var(--cards-bg);
-        border-radius: var(--small-raduis);
-        width: 100%;
         max-width: 400px;
         margin: 0 auto;
     }
@@ -449,11 +434,6 @@ button:hover {
         width: 60px;
         height: 60px;
     }
-
-    
-
-
-
 
     .streamers-section h2 {
         font-size: 2rem;
@@ -466,33 +446,11 @@ button:hover {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 1rem;
-        padding: 0 1rem 30px;
+        gap: 3rem;
+        margin-bottom: 40px;
     }
 
-    .streamer01, .streamer02, .streamer03 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 120px;
-    }
-
-    .streamer01 img, .streamer02 img, .streamer03 img {
-        width: 100%;
-        height: auto;
-    }
-
-    .streamer01 h3, .streamer02 h3, .streamer03 h3 {
-        font-size: 1rem;
-        margin-top: 0.5rem;
-        text-align: center;
-    }
-
-    
-
-
-
-    .sponsors-section h2 {
+     .sponsors-section h2 {
         font-size: 2rem;
         padding: 40px 10px 20px;
         text-align: center;
@@ -510,6 +468,7 @@ button:hover {
         width: 80px;
         height: 80px;
     }
-} */
 
+    
+}
 

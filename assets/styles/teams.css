@@ -1,93 +1,135 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
 
-.section_title{
-    text-align: center;
-    padding-top: 5rem;
-    padding-top: 28px;
+.section_title {
+  text-align: center;
+  padding-top: 5rem;
+  padding-top: 28px;
 }
 
-.section_title p{
-   padding-top: 10px;
-   color: rgb(200, 224, 245);
+.section_title p {
+  padding-top: 10px;
+  color: rgb(200, 224, 245);
 }
 
 
-.team-card{
-    display: flex;
-    align-items:center;
-    justify-content: space-around;
-    padding-top: 5rem;
- 
+.team-card {
+  display: flex;
+  /* align-items:center; */
+  justify-content: space-around;
+  padding-top: 5rem;
+  gap: 1.2rem;
+  flex-wrap: wrap;
 }
 
-.card img{
-    width: 35rem;
-    height:30rem ;
-    object-fit:cover;
-    border-radius: 15px;
+.card img {
+  width: 35rem;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 15px;
+  position: relative;
+  opacity: 57%;
+
+}
+
+/* .card{
     position: relative;
-     opacity: 57%;
-   
+} */
+.card::before{
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  /* display: block; */
+  background-image: url("../images/team2.webp");
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
 }
-.card{
-    position: relative;
+.card {
+  position: relative;
+  padding: 1.5rem;
+  width: 35rem;
+  height: 30rem;
+  opacity: .8;
+  /* background-size: cover; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  justify-content: flex-end;
 }
 
-.members{
-    display: flex;
-    flex-wrap: wrap;
-     position: absolute;
-  top: 200px; 
-  left: 10px; 
+.stats {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.stats > * {
+  color: white;
+}
+
+.card .heading-3 {
+  font-size: 2rem;
+  color: rgb(14, 208, 14);
+}
+
+.card .btn{
+  align-self: center;
+
+}
+
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 200px;
+  left: 10px;
   color: rgb(255, 255, 255);
   font-size: 18px;
 }
+
 .wins {
-    display: flex;
-    flex-wrap: wrap;
-     position: absolute;
-  top: 215px; 
-  left: 10px; 
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 215px;
+  left: 10px;
   color: rgb(255, 255, 255);
   font-size: 18px;
 }
 
 .wins i {
-    display: flex;
-    flex-wrap: wrap;
-     position: absolute;
-  top: 215px; 
-  left: 10px; 
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 215px;
+  left: 10px;
   color: rgb(255, 255, 255);
   font-size: 20px;
 }
 
-.card h2{
-    display: flex;
-    flex-wrap: wrap;
-     position: absolute;
-  top: 173px; 
-  left: 5px; 
+.card h2 {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 173px;
+  left: 5px;
   color: rgb(14, 208, 14);
   font-size: 16px;
 }
 
 
-.card button{
-       display: flex;
-    flex-wrap: wrap;
-     position: absolute;
-      top: 245px; 
-      align-items: center;
-      justify-content: center; 
-    width:100%;
-  }
-
-
+.card button {
+  width: 80%;
+}

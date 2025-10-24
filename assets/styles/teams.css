@@ -4,18 +4,11 @@
   box-sizing: border-box;
 }
 
-#team {
-  background: #000;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-  padding: 4rem 1rem;
+#teams {
+  margin: 4rem 0;
 }
 
-.overlay {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 4rem 1rem;
-  border-radius: 10px;
-}
+
 
 .section-title {
   text-align: center;
@@ -32,10 +25,9 @@
   margin-top: 0.5rem;
 }
 
-.team-cards {
+.teams-cards {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 3rem;
 }
 
@@ -54,15 +46,10 @@
   box-shadow: 0 4px 10px rgba(147, 79, 237, 0.4);
 }
 
-.card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-  border-radius: 1rem;
-}
 
-.card h3,
+
+
+.card h2,
 .card .stats,
 .card .btn {
   position: relative;
@@ -73,9 +60,20 @@
   transform: translateY(-5px);
 }
 
-.card h3 {
+.card h2 {
   color: rgb(14, 208, 14);
+  font-size: 2rem;
+}
+.card p {
   font-size: 1.5rem;
+  padding-top: 2rem;
+  color: var(--white-color);
+}
+
+.card button {
+  margin-top: 2rem;
+  width: 100%;
+
 }
 
 .stats {
@@ -116,4 +114,49 @@ background-image:url(../images/team2.webp);
 .card:last-child{
   background-image:url(../images/team3.webp);
 
+}
+
+
+@media (max-width: 768px) {
+  #teams {
+    margin: 3rem 1rem;
+  }
+
+  .section-title h1 {
+    font-size: 2rem;
+  }
+
+  .section-title p {
+    font-size: 1rem;
+  }
+
+  .teams-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .card {
+    width: 90%;
+    height: 360px;
+    padding: 1rem;
+  }
+
+  .card h2 {
+    font-size: 1.6rem;
+  }
+
+  .card p {
+    font-size: 1.2rem;
+    padding-top: 1.5rem;
+  }
+
+  .stats p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
 }

@@ -8,19 +8,20 @@
   background: #000;
   color: #fff;
   font-family: "Poppins", sans-serif;
-  padding: 4rem 1rem;
+  padding: 7rem 1rem;
+
 }
 
 .section-title h1{
   text-align: center;
-  margin-bottom: 3rem;
-  display: flex;
-  justify-content: center;
+  margin-bottom: 1rem;
+ 
 }
 
 .section-title h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: rgb(14, 208, 14);
+  padding-top: 3rem;
 }
 
 .section-title p {
@@ -34,8 +35,8 @@
 
 .game-cards {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
+
   gap: 2rem;
 }
 
@@ -58,7 +59,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.1);
   border-radius: 1rem;
 }
 
@@ -113,5 +114,50 @@
 .card p {
     font-size: 1.2rem;
     color: white;
-     position: relative;
+    
+}
+
+@media (max-width: 768px) {
+
+  #game {
+    padding: 4rem 1rem;
+  }
+
+
+  .section-title h1 {
+    font-size: 2.2rem;
+    padding-top: 1rem;
+  }
+
+  .section-title p {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+
+  .game-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 500px;
+    height: 320px;
+    padding: 1rem;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
+  .card button {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+  }
 }

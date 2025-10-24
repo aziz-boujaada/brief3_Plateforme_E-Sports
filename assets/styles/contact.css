@@ -37,7 +37,7 @@
   margin-bottom: 0.4rem;
 }
 
-.inputs input {
+.inputs input, .inputs textarea {
   padding: 0.6rem;
   border: 2px solid #444;
   border-radius: 5px;
@@ -79,3 +79,4 @@ height: 60px;
   padding-top: 10px;      
 
 }
+

@@ -4,132 +4,116 @@
   box-sizing: border-box;
 }
 
+#team {
+  background: #000;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  padding: 4rem 1rem;
+}
 
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4rem 1rem;
+  border-radius: 10px;
+}
 
-.section_title {
+.section-title {
   text-align: center;
-  padding-top: 5rem;
-  padding-top: 28px;
+  margin-bottom: 3rem;
 }
 
-.section_title p {
-  padding-top: 10px;
+.section-title h1 {
+  font-size: 2.5rem;
+  color: rgb(14, 208, 14);
+}
+
+.section-title p {
   color: rgb(200, 224, 245);
+  margin-top: 0.5rem;
 }
 
-
-.team-card {
+.team-cards {
   display: flex;
-  /* align-items:center; */
-  justify-content: space-around;
-  padding-top: 5rem;
-  gap: 1.2rem;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 3rem;
 }
 
-.card img {
-  width: 35rem;
-  height: 30rem;
-  object-fit: cover;
-  border-radius: 15px;
-  position: relative;
-  opacity: 57%;
-
-}
-
-/* .card{
-    position: relative;
-} */
-.card::before{
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  /* display: block; */
-  background-image: url("../images/team2.webp");
-  background-repeat: no-repeat;
-  background-size:cover;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 2rem;
-}
 .card {
-  position: relative;
+  width: 320px;
+  height: 380px;
   padding: 1.5rem;
-  width: 35rem;
-  height: 30rem;
-  opacity: .8;
-  /* background-size: cover; */
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-
   justify-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(147, 79, 237, 0.4);
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  border-radius: 1rem;
+}
+
+.card h3,
+.card .stats,
+.card .btn {
+  position: relative;
+  z-index: 2;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: rgb(14, 208, 14);
+  font-size: 1.5rem;
 }
 
 .stats {
   display: flex;
   gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.stats p {
+  display: flex;
   align-items: center;
-}
-.stats > * {
-  color: white;
+  gap: 0.4rem;
 }
 
-.card .heading-3 {
-  font-size: 2rem;
-  color: rgb(14, 208, 14);
-}
-
-.card .btn{
+.btn {
+  margin-top: 1.5rem;
   align-self: center;
-
+  background: rgb(14, 208, 14);
+  border: none;
+  color: #000;
+  font-weight: 600;
+  padding: 0.6rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 
-.members {
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  top: 200px;
-  left: 10px;
-  color: rgb(255, 255, 255);
-  font-size: 18px;
+.card:first-child{
+    background-image: url('../images/team1.webp');
+  
 }
 
-.wins {
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  top: 215px;
-  left: 10px;
-  color: rgb(255, 255, 255);
-  font-size: 18px;
+.card:nth-child(2){ 
+background-image:url(../images/team2.webp);
 }
 
-.wins i {
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  top: 215px;
-  left: 10px;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-}
+.card:last-child{
+  background-image:url(../images/team3.webp);
 
-.card h2 {
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  top: 173px;
-  left: 5px;
-  color: rgb(14, 208, 14);
-  font-size: 16px;
-}
-
-
-.card button {
-  width: 80%;
 }

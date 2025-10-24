@@ -142,7 +142,7 @@ button:hover {
     font-size: 2rem;
 }
 
-/* @media (max-width: 768px){
+@media (max-width: 768px){
     body {
         margin: 0 1rem;
     }
@@ -162,12 +162,10 @@ button:hover {
         display: block;
     }
 
-} */
+}
 
 
-/*Tournaments page (tournaments, live, streamers, sponsors) */
-
-.tournaments-section h2, .live-section h2, .streamers-section h2{
+.about-section h2, .owners-section h2{
     font-family: var(--main-font);
     color: var(--primary-color);
     font-size: 30px;
@@ -176,173 +174,44 @@ button:hover {
     justify-content: center;
 }
 
-.tournaments-card {
+.paragraph-image {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 2rem;
-    margin: 3rem 30rem;
-    padding: 1rem;
-    background-color: var(--cards-bg);
-    border-radius: var(--small-raduis);
-    font-family: var(--main-font);
-    cursor: pointer;
+    padding: 40px;
 }
 
-.tournaments-card:hover {
-    transform: scale(1.1);
-    box-shadow: 10px 10px 15px var(--primary-color);
-    transition: 1.5s;
-}
-
-.tournaments-card img {
-    width: 150px;
-    height: 90px;
-    border-radius: var(--small-raduis);
-    padding: 12px;
-}
-
-.tournament-info h3, .prize h3, .time h3{
-    margin-bottom: 20px;
-    font-size: 17px;
-    color: var(--primary-color);
-}
-
-.tournament-info h4, .prize h4, .time h4{
-    font-size: 12px;
-    
-}
-
-.tournament-info, .prize, .time {
-    border-right: 1px solid white;
-    padding-right: 20px;
-}
-
-.samred img, .samyellow img{
-    width: 90px;
-    height: 90px;
-    border: 2px solid var(--primary-color);
-    border-radius: 50%;
-}
-
-.samred {
-    padding-left: 90px;
-}
-
-.samyellow {
-    padding-left: 50px;
-}
-
-.vs img {
-    width: 80px;
-    height: 80px;
-    
-}
-
-.live img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 130px;
-    margin-left: 40px;
+.paragraph-image p{
+    color: white;
+    font-size: 20px;
+    padding-right: 50px;
 }
 
 
-.live-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    /* gap: 2px; */
-    /* margin: 3rem 30rem; */
-    margin: 5rem 30rem;
-    padding: 1rem;
-    background-color: var(--cards-bg);
-    border-radius: var(--small-raduis);
-    font-family: var(--main-font);
-    cursor: pointer;
-}
-
-.live-card:hover{
-    box-shadow: 10px 10px 30px red;
-    transition: 1.5s;
-    transform: scale(1.1);
-}
-
-.live-section h4 {
-    /* margin-bottom: 50px; */
-    /* padding-left: 35px; */
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-    padding-bottom: 30px;
-    padding-top: 20px;
-    padding-right: 30px;
-}
-
-.samred h4 {
-    margin-right: 80px;
-}
-
-
-/*streamers*/
-
-.streamers-container {
+.owners-container {
     display: flex;
     justify-content: space-evenly;
     padding-top: 30px;
 }
 
-.streamer01, .streamer02, .streamer03 {
+.owner01, .owner02, .owner03 {
     cursor: pointer;
 }
 
-.streamer01:hover, .streamer02:hover, .streamer03:hover {
+.owner01:hover, .owner02:hover, .owner03:hover {
     transform: scale(1.1);
     transition: 1s;
 }
 
-.streamer01 h3, .streamer02 h3, .streamer03 h3{
+.owner01 h3, .owner02 h3, .owner03 h3{
     font-family: var(--main-font);
     font-size: 2rem;
     display: flex;
     justify-content: center;
     padding: 10px;
     border: 2px solid white;
-    background-color: #45f882
+    /* background-color: #45f882 */
 }
 
-/*sponsors*/
-
-.sponsors-section h2{
-    font-family: var(--main-font);
-    color: var(--primary-color);
-    font-size: 30px;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    padding-top: 80px;
-}
-
-.sponsors-container {
-    display: flex;
-    justify-content: space-evenly;
-    border-radius: 20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.sponsors-container img {
-    width: 120px;
-    height: 120px;
-    border-radius: 20px;
-}
-
-.orange:hover, .logitech:hover, .razer:hover, .intel:hover, .geforce:hover
-{
-    transform: scale(1.1);
-    transition: 1s;
-    cursor: pointer;
-}
-
-
-
-
+/* .adnane {
+    width: 792px;
+    height: 1180x;
+} */

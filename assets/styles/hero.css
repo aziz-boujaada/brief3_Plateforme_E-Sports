@@ -90,12 +90,31 @@ body {
     transform: scale(1.1);
 }
 
-@media (max-width:768px)
-{
-   
+
+
+
+
+@media (max-width: 768px) {
+
+    /* ===== HERO SECTION ===== */
+
+    .hero-section {
+        height: 80vh;
+        padding: 0 1rem;
+        background-position: center;
+    }
+
+    .hero-section {
+        font-size: 3rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+
     .buttons {
         flex-direction: column;
-        width: 100%;
-        padding: 1rem;
+        /* align-items: center; */
+        gap: 1rem;
     }
 }

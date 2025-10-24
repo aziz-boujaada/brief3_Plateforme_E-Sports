@@ -8,6 +8,7 @@
     --white-color: #ffff;
     --black-color: black;
     --gray-color: #7A7979;
+    --transparent-color:rgba(0, 253, 169, 0.8);
     --primary-hover: #95ffb9;
     --icons-bg: rgba(161, 255, 221, 0.8);
     --main-font: "Bruno Ace SC", sans-serif;
@@ -20,15 +21,16 @@
     margin: 0;
     padding: 0;
     font-size: 10px;
+    
+    box-sizing: border-box;
 }
 
 body {
     background-color: var(--bg-color);
-    
+    /* margin: 0 6rem; */
 }
 section{
     padding:0 8rem;
-    border-bottom: 1px solid var(--primary-color);
 }
 
 li {
@@ -51,7 +53,7 @@ a:hover {
 }
 
 
-p {
+p{
     font-size: 1.8rem;
     color: var(--gray-color);
 }
@@ -161,6 +163,12 @@ button:hover {
         padding-top: 2rem;
         font-family: var(--main-font);
     }
+
+    .title h1{
+        font-size: 2rem;
+        padding: 3rem 0;
+        text-align: center;
+    }
 /*footer*/
 
 .Top_footer {
@@ -184,8 +192,6 @@ button:hover {
     padding: 1rem;
     border: 2px solid var(--primary-color);
     border-radius: var(--small-raduis);
-.open_mobile_menu i{
-    display: none;
 }
 .footer_icons i {
     font-size: 2rem;
@@ -267,26 +273,6 @@ button:hover {
     
 }
 @media (max-width: 768px) {
-.footer_description p{
-    padding-top: 2rem;
-}
-.footer_icons{
-    margin-top: 2rem;
-    display: flex;
-    gap: 1rem;
-}
-.footer_icons a{
-
-    padding: 1rem;
-    border: 2px solid var(--primary-color);
-    border-radius: var(--small-raduis);
-    text-align: center;
-}
-.footer_icons i{
-
-    font-size: 2rem;
-}
-@media (max-width: 768px){
     body {
         margin: 0 0.5rem;
         
@@ -303,6 +289,9 @@ button:hover {
     .section_title p{
         font-size: 1.5rem;
     }
+     .title h1{
+        font-size: 1.5rem;
+    }
 h1{
     font-size: 2rem;
 }
@@ -311,7 +300,7 @@ li{
 }
     
     #header {
-      width: 90%;
+      width: 100%;
     }
 
     .nav_list,
@@ -381,14 +370,9 @@ li{
    gap: 3rem;
 }
 .copyright_part p{
-  font-size: 1.5rem;
+    text-align: center;
+  font-size: 1.2rem;
+  color: var(--gray-color);
 }
 
 }
-        display: block;
-    }
-
-}
-
-
-

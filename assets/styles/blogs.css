@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#blogs {
+  background: #000;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  padding: 4rem 1rem;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4rem 1rem;
+  border-radius: 10px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title h1 {
+  font-size: 2.5rem;
+  color: rgb(14, 208, 14);
+}
+
+.section-title p {
+  color: rgb(200, 224, 245);
+  margin-top: 0.5rem;
+}
+
+.blog-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.card {
+  width: 320px;
+  height: 420px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(147, 79, 237, 0.4);
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 1rem;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  color: rgb(14, 208, 14);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.card h5 {
+  color: rgb(220, 220, 220);
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.card .category {
+  color: rgb(14, 208, 14);
+}
+
+.card p {
+  color: rgb(200, 224, 245);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.card:first-child {
+  background-image:url(../images/blog1.webp);
+}
+
+.card:nth-child(2) {
+  background-image:url(../images/Blog2.webp);
+}
+
+.card:last-child {
+  background-image:url(../images/Blog3.webp);
+}
